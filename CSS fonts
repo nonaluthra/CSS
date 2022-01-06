@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS fonts</title>
+    <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@200&display=swap" rel="stylesheet">
+    <!--this is example of web fonts-->
+
+    <style>
+
+        p{
+            color:blue;
+            font-style:italic;   /*example of web safe fonts*/
+            font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;  /*Font stack--is one is not available, apply another*/
+            font-size:45px;                  /*px is unit of font -size*/
+            line-height:1em;                  /*em is unit of line height*/
+            font-weight:600;
+        }
+        span{
+               font-weight:bold;
+               font-style:cursive;
+
+        }
+    </style>
+</head>
+<body>
+ <h2>CSS FONTS</h2>   
+ <p>Lets play with fonts. <span>It is very exciting</span></p>
+ 
+</body>
+</html>
