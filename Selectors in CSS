@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selectors</title>
+</head>
+<style>
+    p {
+        color: red;
+        /*element selector*/
+
+    }
+
+    #redElement {
+        color: red;
+        /*id selector*/
+
+    }
+
+    .blueBg {
+        color: blue;
+        /*class selector*/
+
+    }
+
+    footer,
+    span {
+        color: lightgreen;
+        background-color: blueviolet;
+    }
+
+    /* grouping selector */
+    p {
+        border: 2px solid yellow;
+    }
+
+    /*to apply border*/
+</style>
+
+<body>
+    <h3> id and class Selectors</h3>
+    <p id=redElement class="redBg"> we will study about selectors</p>
+    <p class="blueBg"> we will study about types of selectors</p>
+    <div>
+        <p> we will deeply study about selectors</p>
+        <span> this is a span</span>
+    </div>
+    <footer>"this is a footer</footer>
+</body>
+
+</html>
