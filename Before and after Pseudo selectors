@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Before and after Pseudo selectors</title>
+    
+    <style>
+        body{
+            background-color:black;
+            color:blue;
+            margin:0;
+            padding:0;
+        }
+        header::before{
+            content:"";
+            background:black url('ci.jpg') no-repeat center center/cover ;
+            height:100%;
+            width:100%;
+            position:absolute;
+            top:0;
+            left:0;
+            opacity:0.2;
+            
+        }
+        .navigation{
+            display:flex;
+            text-decoration: none;
+            font-size:20px;
+        }
+        li{
+            list-style:none;
+            padding:13px 19px;
+        }
+        section{
+        display:flex;
+        flex-direction:column;
+        align-items:center;
+        height:344px;
+        justify-content:center;
+        margin: 0px 200px;
+        
+        }
+        section::before{
+           content:"This is a content";
+        }
+        section::after{
+           content:"This is another content";
+        }
+    </style>
+</head>
+<body>
+<header>
+<nav class="navbar">
+    <ul class="navigation">
+        <li><a href="Home">Home</a></li>
+        <li><a href="About">About</a></li>
+        <li><a href="Details">Details</a></li>
+        <li style="float:right"><a href="Contact us">Contact us</a></li>
+    </ul>
+</nav>
+</header>   
+<section>
+    <h2 style="font-size:4em">Welcome to coding world</h2>
+    <p  style="font-size:2em">Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus iste mollitia aliquid minus tempora at ad corrupti? Cumque ipsum totam delectus quaerat quas.</p>
+</section>
+
+</body>
+</html>
