@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox in CSS (Flexbox container properties)</title>
+    <style>
+    .container{
+        height:544px;
+        width:100%;
+        border:2px solid red;
+        display: flex;
+        /*Properties for flex container*/
+        flex-direction: row; /*by default*/  
+        flex-direction: column;
+        flex-direction: row-reverse;
+        flex-direction: column-reverse;
+        flex-wrap:wrap;
+        flex-wrap:wrap-reverse;
+        flex-flow:row-reverse wrap;         /*shorthand property*/
+        /*justify-content will justify the contents in horizontal direction*/
+        justify-content:center;          /*takes all the content in center*/
+        justify-content:space-between;   /*equal spaces between two boxes but not from the corners*/
+        justify-content:space-evenly;     /*equal spaces between the boxes as well as from the corners*/
+        justify-content:space-around;      /*spaces on both sides but space between boxes is more than from the corners*/
+        /*justify-content will justify the contents in vertical direction*/
+        align-items:center;       /*all items in center*/
+        align-items:flex-end;     /*all items in end*/
+        align-items:flex-start;      /*by default*/
+        align-items:stretch;   /*stretching takes place acc. to height*/
+    }
+    .item{
+        width:200px;
+        height:200px;
+        background-color: blue;
+        border:2px solid red;
+        margin:10px;
+        padding:3px;
+    }
+    </style>
+</head>
+<body>
+<h1>Properties for flex container</h1>
+<h2>Flexbox in CSS</h2>  
+<div class="container">
+    <div class="item" id="item1">First</div>
+    <div class="item" id="item2">Second</div>
+    <div class="item" id="item3">Third</div>
+    <div class="item" id="item4">Fourth</div>
+    <div class="item" id="item5">Fifth</div>
+</div>
+
+</body>
+</html>
